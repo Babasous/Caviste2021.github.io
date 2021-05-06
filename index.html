@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Mon Cellier SPA</title>
+</head>
+<body class="col-md-12">
+    <div class="container">        
+        <div class="row">
+            <div id="block1" class="col-md-12;"  style="margin-left: 600px; margin-top: 10px;">
+                <a href=index.html><img src="images/caviste-bg-w.png" style="margin-left: 40px" weidth="100" height="80"></a>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline" action=""></form>
+                <input id="inputKey" type="text" style="font-size: 20px" placeholder="Enter keyword here...">
+                <button id="btSearch" class="btn btn-success" style="margin-top: -9px"><i>Search</i></button>
+            </form><br><br>
+            <form class="form-inline" action="" style="margin-left: 1000px; margin-top: -40px;">
+                <select name="" id="country" style="font-size: 25px; font-style: italic;">
+                    <option value="all">All countries</option>
+                    <option value="be">Belgique</option>
+                    <option value="fr">France</option>
+                    <option value="us">USA</option>
+                    <option value="pl">Portugal</option>
+                    <option value="it">Italy</option>
+                </select>
+                <select name="" id="year" style="font-size: 25px; font-style: italic;">
+                    <option value="all">All years</option>
+                    <option value="2020">2020</option>
+                    <option value="2010">2010</option>
+                    <option value="2000">2000</option>
+                    <option value="1990">1990</option>
+                </select>
+                <button class="btn btn-primary" style="margin-top: -10px"><i>Filtre</i></button>
+            </form>
+        </div><br>
+        <div class="row">
+            <div id="list" class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                    <li class="list-group-item"><i></i></li>
+                  </ul>
+            </div>
+            <div id="photo" class="col-md-4">
+                <img src="images/vin05.jpg" style="margin: 80px"><br>
+            </div>
+            <div id="description" class="col-md-4">
+                <span style="background-color: gray; font-size: 30px;"></span><label><h3><i></i></h3></label><br>
+                <i><label>Grapes: </label><span> </span></i><br>
+                <i><label>Country: </label><span> </span></i><br>
+                <i><label>Region: </label><span> </span></i><br>
+                <i><label>Year: </label><span> </span></i><br>
+                <i><label>Capacity: </label><span> </span></i><br>
+                <i><label>Color: </label><span> </span></i><br>
+                <i><label>Price: </label><span> </span></i><br><br>
+                <div>
+                    <i class="fas fa-camera"></i> Add a picture (1/3)      <i class="fas fa-pencil-alt"></i> Add a note<br><br>
+                    <i class="fab fa-gratipay"></i> Like this wine <span style="background-color: red; color: white"><i class="far fa-heart"></i>345</span>
+                </div>            
+            </div>
+        </div>    
+        
+        <!-- Description Commentaires Pays producteurs Vins préférés de User5 -->
+        <div class="row"> 
+            <div id="commentaires" class="col-md-7">               
+                <div class="card">
+                    <div class="card-body bgc-ghost-white">
+                        <ul class="nav nav-tabs" id="nav-44518-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="a-btn nav-link active ltc-ruddy-brown" data-toggle="tab" href="#nav-44518-content-1" role="tab" aria-controls="nav-44518-content-1" aria-selected="true">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="a-btn nav-link" id="nav-44518-tab-2" data-toggle="tab" href="#nav-44518-content-2" role="tab" aria-controls="nav-44518-content-2" aria-selected="false">Commentaires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="a-btn nav-link" id="nav-44518-tab-3" data-toggle="tab" href="#nav-44518-content-3" role="tab" aria-controls="nav-44518-content-3" aria-selected="false">Ajouter commentaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="a-btn nav-link" id="nav-44518-tab-4" data-toggle="tab" href="#nav-44518-content-4" role="tab" aria-controls="nav-44518-content-4" aria-selected="false">Pays producteurs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="a-btn nav-link " id="nav-44518-tab-5" data-toggle="tab" href="#nav-44518-content-5" role="tab" aria-controls="nav-44518-content-5" aria-selected="false">Vins préférés de l'utilisateur</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade-tab-bs" id="nav-44518-content-1" role="tabpanel" aria-labelledby="nav-44518-content-1">
+                                <h3 class="mg-md">
+                                    Description de nos produits
+                                </h3>
+                                <p>
+                                    Veuillez sélectionner un vin sur la liste pour afficher la description de ce vin.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade-tab-bs" id="nav-44518-content-2" role="tabpanel" aria-labelledby="nav-44518-content-2">
+                                <h3 class="mg-md">
+                                    Commentaires de nos clients
+                                </h3>
+                                <p>
+                                    Veuillez sélectionner un vin sur la liste pour afficher les commentaires de ce vin.
+                                </p>
+                                
+                            </div>
+                            <div class="tab-pane fade-tab-bs" id="nav-44518-content-3" role="tabpanel" aria-labelledby="nav-44518-content-3">
+                                <h3 class="mg-md">
+                                    Ajouter vos commentaires
+                                </h3>
+                                <form id="frmComment" name="frmComment" method="">
+
+                                    <div class="form-group">
+                                        <textarea type="text" name="comments" class="form-control" id="comments" rows="3" placeholder="Veuillez entrer votre commentaire"></textarea>
+                                        <button type="submit" name="btSendComment" class="btn btn-success" id="btAddComment">Ajouter</button>
+                                    </div>
+                                </form>
+                                <div>
+                                    <p id="textComment" contenteditable="true">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade-tab-bs" id="nav-44518-content-4" role="tabpanel" aria-labelledby="nav-44518-content-4">
+                                <h3 class="mg-md">
+                                    La liste des Pays producteurs de nos vins.
+                                </h3>
+                                <p>
+                                    List Countries
+                                </p>
+                            </div>							
+                            <div class="tab-pane fade-tab-bs" id="nav-44518-content-5" role="tabpanel" aria-labelledby="nav-44518-content-5">
+                                <h3 class="mg-md">
+                                    Vins préféres de l'utilisateur
+                                </h3>
+                                <p>
+                                    Liste des vins préférés de User5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="courbe" class="col-md-5">
+                <!-- courbe-et-stat-donnees- -->
+                <div class="col-lg-2"><h5>Statistique</h5></div> 
+                <div class="col-lg-3">
+                    <img src="images/courbe.png"><br>
+                </div>
+            </div>
+        </div>                            
+    </div>  
+    <script src="script.js"></script> 
+</body>
+</html>
